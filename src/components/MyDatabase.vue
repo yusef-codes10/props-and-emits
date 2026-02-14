@@ -17,7 +17,14 @@ console.log(database)
 </script>
 
 <template>
-  <UserS />
+  <UserS
+    v-for="(user, index) in database"
+    :key="index"
+    user.firstName
+    user.lastName
+    user.department
+    user.age
+  />
 </template>
 
 <style scoped></style>
