@@ -30,7 +30,7 @@ const upCount = defineEmits(['up'])
     </div>
     <div class="btns">
       <button>Reset</button>
-      <button @click="upCount('up', count)">Up</button>
+      <button @click="upCount('up')">Up</button>
       <button>Down</button>
     </div>
   </div>
