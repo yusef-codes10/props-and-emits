@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import MyCounter from './MyCounter.vue'
+</script>
 
-<template>counter container</template>
+<template>
+  <MyCounter />
+</template>
 
 <style scoped></style>
