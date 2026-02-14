@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <ol>
+  <ul>
     <li>
       firstname: <b>{{ firstName }}</b>
     </li>
@@ -25,7 +25,8 @@ defineProps({
     <li>
       age <b>{{ age }}</b>
     </li>
-  </ol>
+  </ul>
+  <button>Delete User</button>
 </template>
 
 <style scoped></style>
