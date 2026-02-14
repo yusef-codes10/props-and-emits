@@ -12,10 +12,14 @@ const increment = () => {
 const descrement = () => {
   count.value--
 }
+
+const reset = () => {
+  count.value = 0
+}
 </script>
 
 <template>
-  <MyCounter :count="count" @up="increment" @down="descrement" />
+  <MyCounter :count="count" @up="increment" @down="descrement" @reset="reset" />
 </template>
 
 <style scoped></style>

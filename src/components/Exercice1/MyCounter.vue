@@ -20,7 +20,7 @@ defineProps({
   },
 })
 // !
-const emit = defineEmits(['up'], ['down'])
+const emit = defineEmits(['up'], ['down'], ['reset'])
 </script>
 
 <template>
@@ -29,7 +29,7 @@ const emit = defineEmits(['up'], ['down'])
       <p>{{ count }}</p>
     </div>
     <div class="btns">
-      <button>Reset</button>
+      <button @click="emit('reset')">Reset</button>
       <button @click="emit('up')">Up</button>
       <button @click="emit('down')">Down</button>
     </div>
