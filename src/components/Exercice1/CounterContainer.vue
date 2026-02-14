@@ -16,6 +16,16 @@ const descrement = () => {
 const reset = () => {
   count.value = 0
 }
+
+// handle the max count
+const handleMax = (limit) => {
+  if (limit < 0) {
+    console.log('cannot go beyond 0')
+  }
+  if (limit > count.value) {
+    console.log('you have surpassed the limit')
+  }
+}
 </script>
 
 <template>

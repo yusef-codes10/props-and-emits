@@ -20,7 +20,7 @@ defineProps({
   },
 })
 // !
-const emit = defineEmits(['up', 'down', 'reset'])
+const emit = defineEmits(['up', 'down', 'reset', 'limitReached'])
 </script>
 
 <template>
