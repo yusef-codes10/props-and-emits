@@ -26,7 +26,7 @@ defineProps({
       age <b>{{ age }}</b>
     </li>
   </ul>
-  <button>Delete User</button>
+  <button @click="$emit(deleteUser, firstName)">Delete User</button>
 </template>
 
 <style scoped></style>
