@@ -14,6 +14,8 @@ const database = ref([
 ])
 
 console.log(database)
+
+//* deleteUser function should be inside the parent/container
 </script>
 
 <template>
