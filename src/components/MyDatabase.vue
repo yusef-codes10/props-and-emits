@@ -2,6 +2,7 @@
 // this is the parent/container component that handles the children.
 
 import { ref } from 'vue'
+import UserS from './UserS.vue'
 const database = ref([
   { firstName: 'Peter', lastName: 'Parker', department: 'Marketing', age: 23 },
   { firstName: 'Mary Jane', lastName: 'watson', department: 'Marketing', age: 22 },
@@ -16,7 +17,7 @@ console.log(database)
 </script>
 
 <template>
-  <h1>You did it!</h1>
+  <UserS />
 </template>
 
 <style scoped></style>

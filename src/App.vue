@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+import MyDatabase from './components/MyDatabase.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
+  <MyDatabase />
 </template>
 
 <style scoped></style>
