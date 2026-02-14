@@ -1,9 +1,10 @@
 <script setup>
-import MyDatabase from './components/MyDatabase.vue'
+import CounterContainer from './components/Exercice1/CounterContainer.vue'
 </script>
 
 <template>
-  <MyDatabase />
+  <!-- <MyDatabase /> -->
+  <CounterContainer />
 </template>
 
 <style scoped></style>

@@ -1,0 +1,24 @@
+Exercise 1: Counter Component
+Build a reusable counter that the parent controls.
+CounterDisplay.vue (Child):
+Props to receive:
+- count (Number)
+- maxCount (Number, default: 10)
+- minCount (Number, default: 0)
+- step (Number, default: 1)
+
+Emits to send:
+- increment (no data)
+- decrement (no data)
+- reset (no data)
+- limitReached (sends 'max' or 'min')
+
+Display the count and buttons.
+Disable increment button when count >= maxCount
+Disable decrement button when count <= minCount
+Emit limitReached when user tries to go beyond limits
+Parent component:
+
+Manages the actual count state
+Listens to all emits and updates count
+Shows alert when limit is reached
