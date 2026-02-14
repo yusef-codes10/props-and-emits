@@ -1,7 +1,7 @@
 <script setup>
 // we have to define the props in the child compinent, for it to recieve data
 // from the container/parent
-import { defineProps } from 'vue'
+import { defineProps, defineEmits } from 'vue'
 
 defineProps({
   firstName: String,
@@ -9,6 +9,8 @@ defineProps({
   department: String,
   age: Number,
 })
+
+const emit = defineEmits(['rm'])
 </script>
 
 <template>
@@ -26,7 +28,7 @@ defineProps({
       age <b>{{ age }}</b>
     </li>
   </ul>
-  <button @click="$emit(rm, firstName)">Delete User</button>
+  <button @click="emit('rm', firstName)">Delete User</button>
 </template>
 
 <style scoped></style>
