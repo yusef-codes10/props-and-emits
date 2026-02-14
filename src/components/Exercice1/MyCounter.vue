@@ -2,7 +2,10 @@
 import { defineProps, defineEmits } from 'vue'
 
 defineProps({
-  count: Number,
+  count: {
+    type: Number,
+    default: 0,
+  },
   maxCount: {
     type: Number,
     default: 10,
@@ -27,7 +30,7 @@ const upCount = defineEmits(['up'])
     </div>
     <div class="btns">
       <button>Reset</button>
-      <button @click="upCount('up')">Up</button>
+      <button @click="upCount('up', count)">Up</button>
       <button>Down</button>
     </div>
   </div>
