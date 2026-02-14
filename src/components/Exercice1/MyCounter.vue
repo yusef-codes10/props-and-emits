@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps, ref } from 'vue'
 
 defineProps({
   count: Number,
@@ -16,16 +16,21 @@ defineProps({
     default: 1,
   },
 })
+
+const count1 = ref(0)
+const upCount = () => {
+  count1.value++
+}
 </script>
 
 <template>
   <div class="counter">
     <div class="display">
-      <p>0</p>
+      <p>{{ count1 }}</p>
     </div>
     <div class="btns">
       <button>Reset</button>
-      <button>Up</button>
+      <button @click="upCount">Up</button>
       <button>Down</button>
     </div>
   </div>
