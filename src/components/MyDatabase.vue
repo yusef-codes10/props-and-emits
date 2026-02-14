@@ -30,7 +30,7 @@ const deleteUser = (firstName) => {
     :lastName="user.lastName"
     :department="user.department"
     :age="user.age"
-    v-on:rm="deleteUser"
+    @rm="deleteUser"
   />
 </template>
 
