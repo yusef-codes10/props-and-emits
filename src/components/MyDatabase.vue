@@ -18,6 +18,7 @@ console.log(database)
 //* deleteUser function should be inside the parent/container
 const deleteUser = (firstName) => {
   console.log(firstName)
+  database.value = database.value.filter((user) => user.firstName !== firstName)
 }
 </script>
 
