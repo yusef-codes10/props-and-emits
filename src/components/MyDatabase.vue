@@ -20,10 +20,10 @@ console.log(database)
   <UserS
     v-for="(user, index) in database"
     :key="index"
-    user.firstName
-    user.lastName
-    user.department
-    user.age
+    :firstName="user.firstName"
+    :lastName="user.lastName"
+    :department="user.department"
+    :age="user.age"
   />
 </template>
 

@@ -13,10 +13,18 @@ defineProps({
 
 <template>
   <ol>
-    <li>firstname</li>
-    <li>lastname</li>
-    <li>departement</li>
-    <li>age</li>
+    <li>
+      firstname: <b>{{ firstName }}</b>
+    </li>
+    <li>
+      lastname <b>{{ lastName }}</b>
+    </li>
+    <li>
+      departement <b>{{ department }}</b>
+    </li>
+    <li>
+      age <b>{{ age }}</b>
+    </li>
   </ol>
 </template>
 
