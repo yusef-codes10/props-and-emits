@@ -6,10 +6,12 @@ import { ref } from 'vue'
 
 const count = ref(0)
 const increment = () => {
+  // handle the max here
   count.value++
 }
 
 const descrement = () => {
+  // handel the min here
   count.value--
 }
 
